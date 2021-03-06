@@ -36,7 +36,31 @@
     &__masthead__navigation--anchore {
         @include Link
     }
+
+    &__masthead__navigation {
+       background-color: black;
+       position: relative;
+       width: 250px;
+       left: -200px;
+       padding: calc(#{$padding} * 2);
+    }
 }
+
+.check {
+    zoom: 2;
+    top: calc(#{$top} / 5);
+    position: absolute;
+    right: calc(#{$right} / 5);
+    opacity: 0;
+}
+
+.button__openbar {
+    position: absolute;
+    top:calc(#{$top} * 2);
+    right: $right;
+}
+
+
 
 
 

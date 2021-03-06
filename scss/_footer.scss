@@ -30,11 +30,15 @@
 
     &__linkcontainer__navigation--lists {
         display: flex;
+        list-style: $list-style;
+        justify-content: center;
     }
 
     &__linkcontainer__navigation--list {
         margin: $margin
     }
+
+    
 }
 
 .facebbok {

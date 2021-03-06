@@ -5,16 +5,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/index.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
   <title>Loopsstudios landing page</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <section class="masthead">
       <!-- <img src="./images/mobile/image-hero.jpg" alt=""> -->
       <article class="header__container">
         <h1 class="header__logotitle" > Loopstudio </h1>
+        <label for="check">
+          <button class="button__openbar" >
+           <img src="./images/icon-hamburger.svg" alt="bar">
+          </button>
+  
+        </label>
+        <input type="checkbox" id="check" class="check">
         <nav class="header__masthead__navigation">
           <ul class="header__masthead__navigation--list">
             <li class="header__masthead__navigation--lists"><a class="header__masthead__navigation--anchore" href="#/about"> About </a></li>
@@ -25,7 +33,7 @@
           </ul>
         </nav>
       </article>
-      <div class="container">
+      <div class="header__textcontainer">
         <p class="header__text">
           Immersive experiences that deliver
         </p>

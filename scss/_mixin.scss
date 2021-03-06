@@ -1,0 +1,14 @@
+@mixin TextCadre {
+    color: white;
+    text-transform: uppercase;
+    border: white solid 3px;
+    padding: 10%;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 35px;
+}
+
+@mixin Link {
+    text-decoration: none;
+    color: white;
+}

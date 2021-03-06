@@ -1,0 +1,53 @@
+@import "mixin";
+
+.header {
+    background-image: url(../images/mobile/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+
+    &__logotitle {
+        color: white;
+        font-weight: 700;
+    }
+
+
+    &__text {
+        @include TextCadre;
+        margin-inline-end: 10%;
+        
+
+    }
+
+    &__textcontainer {
+        width: 100%;
+        padding-bottom: 10%;
+        margin-bottom: 5%;
+        margin-inline-start: 5%;
+        margin-inline-end: 5%;
+        
+    }
+
+    &__masthead__navigation--list {
+        list-style: $list-style;
+    }
+
+    &__masthead__navigation--anchore {
+        @include Link
+    }
+}
+
+
+
+.button__openbar {
+    background-color: transparent;
+    border: none;
+}
+
+
+@media(min-width: 800px) {
+    .header {
+        background-image: url(../images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}

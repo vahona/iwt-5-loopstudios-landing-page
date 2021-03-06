@@ -9,12 +9,13 @@ body {
 .header {
   background-image: url(../images/mobile/image-hero.jpg);
   background-repeat: no-repeat;
-  background-size: 100%; }
+  background-size: cover; }
   .header__logotitle {
     color: white;
     font-weight: 700;
     margin-top: 0;
-    padding: 1rem; }
+    padding: 1rem;
+    font-size: 32px; }
   .header__text {
     color: white;
     text-transform: uppercase;
@@ -26,7 +27,7 @@ body {
     margin-inline-end: 10%; }
   .header__textcontainer {
     width: 90%;
-    padding-bottom: 10%;
+    padding-bottom: 30%;
     margin-bottom: 5%;
     margin-inline-start: 5%;
     margin-inline-end: 5%; }
@@ -72,7 +73,7 @@ input[type=checkbox]:not(:checked) + .header__masthead__navigation {
   .header {
     background-image: url(../images/desktop/image-hero.jpg);
     background-repeat: no-repeat;
-    background-size: 100%; } }
+    background-size: cover; } }
 
 .main__leader__image {
   width: 100%; }

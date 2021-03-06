@@ -44,19 +44,29 @@ body {
 
 .check {
   zoom: 2;
-  top: calc(1rem / 5);
+  top: calc(1rem / 2);
   position: absolute;
-  right: calc(1rem / 5);
+  right: calc(1rem / 2);
   opacity: 0; }
 
 .button__openbar {
   position: absolute;
   top: calc(1rem * 2);
-  right: 1rem; }
-
-.button__openbar {
+  right: 1rem;
   background-color: transparent;
   border: none; }
+
+input[type=checkbox]:checked + .header__masthead__navigation {
+  transform: translateX(50%);
+  transition: all 0.5s ease;
+  margin-inline-start: calc(1rem * 2);
+  margin-inline-end: calc(1rem * 2); }
+
+input[type=checkbox]:not(:checked) + .header__masthead__navigation {
+  transform: translateX(-100%);
+  transition: all 0.5s ease-out;
+  left: -300px;
+  margin-inline-start: 1rem; }
 
 @media (min-width: 800px) {
   .header {

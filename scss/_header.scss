@@ -48,9 +48,9 @@
 
 .check {
     zoom: 2;
-    top: calc(#{$top} / 5);
+    top: calc(#{$top} / 2);
     position: absolute;
-    right: calc(#{$right} / 5);
+    right: calc(#{$right} / 2);
     opacity: 0;
 }
 
@@ -58,16 +58,25 @@
     position: absolute;
     top:calc(#{$top} * 2);
     right: $right;
-}
-
-
-
-
-
-.button__openbar {
     background-color: transparent;
     border: none;
 }
+
+
+input[type=checkbox]:checked + .header__masthead__navigation {
+    transform: translateX(50%);
+    transition: all 0.5s ease;
+    margin-inline-start:  calc(#{$margin-inline-start} * 2);
+    margin-inline-end:  calc(#{$margin-inline-end} * 2);
+ }
+ 
+ input[type=checkbox]:not(:checked) + .header__masthead__navigation {
+     transform: translateX(-100%);
+     transition: all 0.5s ease-out;
+     left: -300px;
+     margin-inline-start: $margin-inline-start;
+ }
+
 
 
 @media(min-width: 800px) {

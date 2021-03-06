@@ -14,3 +14,16 @@
   position: absolute;
   @include SubTextCadre
 }
+
+.main__creation__creationbutton {
+    background-color: transparent;
+    border: gray 1px solid;
+    padding-left: calc(#{$padding-left} * 2);
+    padding-right: calc(#{$padding-right} * 2);
+    padding-top: calc( #{$padding-top} / 2 );
+    padding-bottom: calc( #{$padding-bottom} / 2 );
+}
+
+.button__container {
+    text-align: center;
+}

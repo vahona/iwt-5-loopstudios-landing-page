@@ -1,0 +1,60 @@
+
+@import "mixin";
+
+.footer {
+    background-color: hsl(0, 0%, 0%);
+    text-align: center;
+    &__logo {
+        color: white;
+        font-weight: 700;
+        font-size: 32px;
+        padding: $padding;
+    }
+
+    &__container__navigation--lists {
+        list-style: $list-style;
+    }
+
+    &__container__navigation--anchore {
+        @include Link
+    }
+
+    &__container__navigation--list {
+        margin-top: $margin-top;
+    }
+
+    &__linkcontainer__navigation--anchore {
+        text-indent: -9999px;
+        display: inline-block;
+    }
+
+    &__linkcontainer__navigation--lists {
+        display: flex;
+    }
+
+    &__linkcontainer__navigation--list {
+        margin: $margin
+    }
+}
+
+.facebbok {
+    background-image: url("../images/icon-facebook.svg");
+    @include Contact
+
+}
+
+.twitter {
+    background-image: url("../images/icon-twitter.svg");
+    @include Contact
+}
+
+.pinterest {
+    background-image: url("../images/icon-pinterest.svg");
+    @include Contact
+}
+
+.istagram {
+    background-image: url("../images/icon-instagram.svg");
+    @include Contact
+}
+

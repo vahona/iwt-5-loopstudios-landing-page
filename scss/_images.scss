@@ -1,6 +1,26 @@
 .main__leader__image {
     width: 100%;
-    // margin-inline-end: 10%;
-    // margin-inline-start: 10%;
-    // margin-block-start: 20%;
+    
+}
+
+
+.main__creation__desktopimage {
+    display: none;
+    width: 100%;
+}
+
+.main__creation__mobileimage {
+    width: 100%;
+}
+
+@media(min-width: 800px) {
+    .main__creation__mobileimage {
+        display: none;
+        width: 100%;
+    }
+
+    .main__creation__desktopimage {
+        display: block;
+        
+    }
 }

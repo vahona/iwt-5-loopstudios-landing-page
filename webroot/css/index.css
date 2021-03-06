@@ -49,6 +49,45 @@ body {
 .main__leader__image {
   width: 100%; }
 
+.main__creation__desktopimage {
+  display: none;
+  width: 100%; }
+
+.main__creation__mobileimage {
+  width: 100%; }
+
+@media (min-width: 800px) {
+  .main__creation__mobileimage {
+    display: none;
+    width: 100%; }
+  .main__creation__desktopimage {
+    display: block; } }
+
 .main__imagecontainer {
   margin-inline-end: 10%;
   margin-inline-start: 10%; }
+
+.main__leader__title,
+.main__leader__text {
+  text-align: center;
+  justify-content: center; }
+
+.main__creation__creationlists {
+  list-style: none;
+  padding-inline-start: 1rem;
+  position: relative; }
+
+.main__creation__creationlist {
+  margin: 1rem; }
+
+.main__creation__creationtype {
+  color: white;
+  position: absolute;
+  color: white;
+  text-transform: uppercase;
+  padding: 5%;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 20px;
+  margin-inline-start: 1rem;
+  margin-top: calc(1rem * 5); }

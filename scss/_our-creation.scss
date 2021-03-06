@@ -1,0 +1,16 @@
+.main__creation__creationlists {
+    list-style: $list-style;
+    padding-inline-start: $padding-inline-start;
+    position: relative;
+}
+
+
+.main__creation__creationlist  {
+   margin: $margin;
+}
+
+.main__creation__creationtype {
+  color: white;
+  position: absolute;
+  @include SubTextCadre
+}

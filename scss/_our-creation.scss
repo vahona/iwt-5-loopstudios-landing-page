@@ -12,7 +12,8 @@
 .main__creation__creationtype {
   color: white;
   position: absolute;
-  @include SubTextCadre
+  @include SubTextCadre;
+  
 }
 
 .main__creation__creationbutton {

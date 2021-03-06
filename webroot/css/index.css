@@ -79,8 +79,7 @@ input[type=checkbox]:not(:checked) + .header__masthead__navigation {
   width: 100%; }
 
 .main__creation__desktopimage {
-  display: none;
-  width: 100%; }
+  display: none; }
 
 .main__creation__mobileimage {
   width: 100%; }
@@ -120,10 +119,9 @@ input[type=checkbox]:not(:checked) + .header__masthead__navigation {
   color: white;
   text-transform: uppercase;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 20px;
   margin-inline-start: 1rem;
-  margin-top: calc(1rem * 5);
   width: 110px; }
 
 .main__creation__creationbutton {

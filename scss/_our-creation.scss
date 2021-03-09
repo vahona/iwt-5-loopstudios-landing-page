@@ -28,3 +28,10 @@
 .button__container {
     text-align: center;
 }
+
+@media(min-width: 800px) {
+    .main__creation__creationlists {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
+}

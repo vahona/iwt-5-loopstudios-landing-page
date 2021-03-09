@@ -135,6 +135,11 @@ input[type=checkbox]:not(:checked) + .header__masthead__navigation {
 .button__container {
   text-align: center; }
 
+@media (min-width: 800px) {
+  .main__creation__creationlists {
+    display: grid;
+    grid-template-columns: repeat(4, auto); } }
+
 .footer {
   background-color: black;
   text-align: center; }
